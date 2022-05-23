@@ -1,5 +1,5 @@
 const add = require("./functions");
-const customMatcher = require("./custom");
+require("./custom");
 
 describe("Testing add function", () => {
   let num = 10;
@@ -21,7 +21,7 @@ describe("Testing add function", () => {
   num++;
 });
 
-beforeEach(() => customMatcher);
+// beforeEach(() => customMatcher);
 
 //Custom Matcher
 test("2 to equal 20", () => {
